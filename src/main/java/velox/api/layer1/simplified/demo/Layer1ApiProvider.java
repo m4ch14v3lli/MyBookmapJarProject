@@ -3,12 +3,12 @@ package velox.api.layer1.simplified.demo;
 import java.util.Set;
 import java.util.HashSet;
 import java.util.concurrent.CopyOnWriteArraySet;
-import velox.api.layer1.data.OrderSendParameters;
-import velox.api.layer1.data.OrderUpdateParameters;
 
-public class Layer1ApiProvider extends Layer1ApiAdminProvider {
-    // ... keep as-is
+@Override
+public void close() {
+    // Add cleanup code if needed
 }
+
 
 // No longer public
 abstract class Layer1ApiAdminProvider implements AutoCloseable {

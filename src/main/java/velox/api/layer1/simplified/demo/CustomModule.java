@@ -1,7 +1,5 @@
 package velox.api.layer1.simplified.demo;
 
-public interface Api {}
-public class InitialState {}
 /**
  * Base class for modules annotated with Layer1SimpleAttachable.
  * Provides way for Bookmap to interact with module.
@@ -30,6 +28,11 @@ public class CustomModule {
      * allocated any resources - that's a good place to release those.
      */
     public abstract void stop();
+    @Override
+    public void stop() {
+        // Add shutdown logic if needed
+    }
+
 }
 
 // Example implementation:
