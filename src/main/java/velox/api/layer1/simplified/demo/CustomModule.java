@@ -1,5 +1,7 @@
 package velox.api.layer1.simplified.demo;
 
+public interface Api {}
+public class InitialState {}
 /**
  * Base class for modules annotated with Layer1SimpleAttachable.
  * Provides way for Bookmap to interact with module.
