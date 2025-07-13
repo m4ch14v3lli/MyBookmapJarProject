@@ -4,11 +4,13 @@ import java.util.Set;
 import java.util.HashSet;
 import java.util.concurrent.CopyOnWriteArraySet;
 
-@Override
-public void close() {
-    // Add cleanup code if needed
+public class Layer1ApiProvider extends Layer1ApiAdminProvider {
+    @Override
+    public void close() {
+        // Add cleanup code if needed
+    }
+    // ... keep as-is
 }
-
 
 // No longer public
 abstract class Layer1ApiAdminProvider implements AutoCloseable {
